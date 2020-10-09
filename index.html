@@ -4,10 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JobSearch</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/722b0ff96b.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="header sticky-top">
+      <div class="header-section">
+        <div class="title">
+          <h1><a id="title-text" href="#">Job Search</a></h1>
+        </div>     
+        <div class="favorites"><a id="fav-btn" href="#">Избранное</a></div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <div id="fav" hidden>
+      <div class="fav-title"><h3>Вы отметили это</h3></div>
+      <ul id="fav-jobs" class="jobs-wrapper"></ul>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
